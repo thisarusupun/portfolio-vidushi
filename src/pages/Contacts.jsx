@@ -70,7 +70,7 @@ function Contacts() {
 
 
 
-<div className='absolute top-[496.09px] left-[10.175vw]'>
+<div className='relative top-[272.09px] left-[10.175vw]'>
 
 <div className='flex flex-row space-x-[0.75vw]'>
 <svg xmlns="http://www.w3.org/2000/svg" width="28.375" height="19.154" viewBox="0 0 28.375 19.154">
@@ -93,8 +93,8 @@ function Contacts() {
 <p className='text-white poppins-thin text-[16px]'>No. 361/4, Maligathenna, Ampitiya, Kandy, Sri Lanka</p>
 </div>
 </div>
-        </div>
-        <div className='absolute top-[689.09px] left-[10.175vw] w-[7.45vw] h-[59.83px] bg-transparent'>
+
+<div className='relative top-[390px] left-[10.175vw] w-[7.45vw] h-[59.83px] bg-transparent'>
                <p className='text-white  poppins-thin text-[16px] h-[23px]' >Follow me</p>
                <div className='pt-[19px]'>
                <div className='flex flex-row justify-center items-left space-x-[1.7vw]'>
@@ -116,6 +116,7 @@ function Contacts() {
 </div>
 </div>
             </div>
+        </div>
       </div>
       <Footer />
     </div>
