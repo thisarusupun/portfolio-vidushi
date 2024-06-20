@@ -93,9 +93,6 @@ function Contacts() {
 <p className='text-white poppins-thin text-[16px]'>No. 361/4, Maligathenna, Ampitiya, Kandy, Sri Lanka</p>
 </div>
 </div>
-
-
-
         </div>
         <div className='absolute top-[689.09px] left-[10.175vw] w-[7.45vw] h-[59.83px] bg-transparent'>
                <p className='text-white  poppins-thin text-[16px] h-[23px]' >Follow me</p>
