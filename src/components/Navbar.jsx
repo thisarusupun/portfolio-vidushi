@@ -1,46 +1,43 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { TiSocialFacebookCircular } from 'react-icons/ti'
+import { TiSocialFacebookCircular } from 'react-icons/ti';
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
+
 
 const Navbar = () => {
 
   const [nav, setNav] = useState(false);
 
+  // Array for page links
   const links = [
     {
       id:1,
-      link: 'about me',
-      href: "./pages/About",
+      link: 'about',
     },
     {
       id:2,
       link: 'resume',
-      href: '../pages/Resume',
     },
     {
       id:3,
       link: 'researchers',
-      href: './Researches',
     },
     {
       id:4,
-      link: 'achievements',
-      href: './Achievements',
+      link: 'Achievements',
     },
     {
       id:5,
       link: 'blogs',
-      href: './Blogs',
     },
     {
       id:6,
-      link: 'contact me',
-      href: './Contact'
+      link: 'contact',
     },
   ]
 
+  // Array for Social Media Details
   const social = [
     {
       id: 1,
@@ -83,17 +80,12 @@ const Navbar = () => {
           {/* Displaying Navbar Links */}
         <ul className='hidden md:flex'>
 
-          {links.map(({id, link, href}) => (
+          {links.map(({id, link}) => (
             <li 
               key={id}
-              className='px-4 cursor-pointer capitalize font-medium text-stone-300 hover:scale-105 duration-200' >
-              <a 
-                href={href} 
-                rel='noreferrer'>
-                {link}
-              </a>  
-              
-                
+              className='px-4 cursor-pointer capitalize font-medium hover:scale-105 duration-200'
+            >
+                <Link to={link} smooth duration={500}>{link}</Link>  
             </li>
           ))}
         </ul>
@@ -116,7 +108,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Adding hamburger Icon and cross icon for the Responsive Effect */}
+          {/* Adding hamburger Icon and cross icon for Responsive Effect */}
         <div 
         onClick={() =>{setNav(!nav)}} 
         className='cursor-pointer pr-4 z-10 text-stone-300 md:hidden'>

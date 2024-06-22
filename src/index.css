@@ -11,3 +11,9 @@
     }
 }
 
+.subscript {
+    font-size: 0.75rem; /* Adjust font size as needed */
+    position: relative;
+    bottom: 0.2em; /* Adjust vertical positioning */
+    right: -0.1em; /* Adjust horizontal positioning */
+  }
