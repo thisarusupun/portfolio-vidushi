@@ -12,12 +12,12 @@ const Navbar = () => {
     {
       id:1,
       link: 'about me',
-      href: "./About",
+      href: "./pages/About",
     },
     {
       id:2,
       link: 'resume',
-      href: './Resume',
+      href: '../pages/Resume',
     },
     {
       id:3,
