@@ -85,7 +85,9 @@ const Navbar = () => {
               key={id}
               className='px-4 cursor-pointer capitalize font-medium hover:scale-105 duration-200'
             >
-                <Link to={link} smooth duration={500}>{link}</Link>  
+                <Link to={link} smooth duration={500}>
+                  {link}
+                </Link>  
             </li>
           ))}
         </ul>
@@ -111,7 +113,7 @@ const Navbar = () => {
           {/* Adding hamburger Icon and cross icon for Responsive Effect */}
         <div 
         onClick={() =>{setNav(!nav)}} 
-        className='cursor-pointer pr-4 z-10 text-stone-300 md:hidden'>
+        className='cursor-pointer pr-4 z-10 text-stone-300 md:hidden sm:hidden'>
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
 
@@ -122,7 +124,9 @@ const Navbar = () => {
                 <li 
                   key={id}
                   className='px-4 cursor-pointer capitalize py-6 text-4xl' >
-                    {link}
+                    <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>
+                      {link}
+                    </Link>  
                 </li>
               ))}          
 
