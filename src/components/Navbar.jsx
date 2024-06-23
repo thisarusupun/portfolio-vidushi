@@ -74,7 +74,9 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-20 px-4 text-[#ffffff] bg-[#001139] fixed'>
         <div>
           {/* Display the Logo */}
-          <h1 className='text-3xl pl-40 ml-14 font-bold text-[#A7F0FD]'>Udeshi</h1>
+          <Link to="home" smooth duration={500}>
+          <h1 className='text-3xl pl-40 ml-14 font-bold text-[#A7F0FD] cursor-pointer capitalize'>Udeshi</h1>
+          </Link>
         </div>
 
           {/* Displaying Navbar Links */}
