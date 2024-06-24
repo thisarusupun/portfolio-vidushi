@@ -6,7 +6,7 @@ function Contacts() {
   return (
     <div className="min-h-screen flex flex-col bg-black h-[1175px]">
       <div className="flex-1">
-        <div className="bg-[url('src/images/contactus.png')] bg-[100vw] w-full h-[1175px] aspect-w-16 aspect-h-9">
+        <div className="bg-[url('src/Assests/images/contactus.png')] bg-[100vw] w-full h-[1175px] aspect-w-16 aspect-h-9">
 
           <p className='font-[poppins] text-[#90F2FF] opacity-100 text-center pt-[120px]'>Contact Me</p>
           <p className='text-center poppins-thin text-[50px] text-[#90F2FF] pt-[10px]'><span className='text-center font-[poppins] font-semibold text-[50px] text-[#90F2FF]'>Let’s</span> get in touch</p>

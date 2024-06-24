@@ -1,10 +1,27 @@
 import React from 'react'
 
 function Resume() {
+ 
+  
+  const onButtonClick = () => {
+    const pdfUrl = "CV.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Udeshi Bandara.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    console.log(link);
+};
+
+ 
   return (
     <div>
-      <div className="bg-[url('src/images/resume.png')] bg-[100vw] h-[1579px] bg-cover overflow-hidden">
-      <p className='text-center text-[16px] poppins-thin text-[#90F2FF] text-opacity-100 pt-[120px]'>Resume</p>
+      <div className="bg-[url('src/Assests/images/resume.png')] bg-[100vw] h-[1579px] overflow-hidden">
+      <button onClick={onButtonClick}className='relative bg-[#000E31] w-[18.0087vw] h-[74px] z-50 top-[1385px] left-[41.654vw]'>
+        <p className='text-white font-[16px] poppins-thin'><span className='font-bold'>Download My</span> Resume</p>
+        </button> 
+      <p className='text-center text-[16px] poppins-thin text-[#90F2FF] text-opacity-100 pt-[70px]'>Resume</p>
       <p className='text-center text-[50px] poppins-extrathin text-[#90F2FF] pt-[10px]'><span className='font-semibold'>A Summary of</span>  My Resume</p>
       <div className='relative left-[10.17569vw] w-[88.52430vw]'>
       <div className='flex flex-row bg-transparent h-[125px] justify-start'>
@@ -110,7 +127,8 @@ function Resume() {
       <div className='h-[83px] w-[34.1874vw]'>
       <p className='poppins-thinb text-white text-[16px] leading-[30px]'>Chemistry magazine writer and Editor. Chemistry book writer</p>
       </div>
-      </div>  
+     
+      </div> 
         </div>
       </div>
       </div>

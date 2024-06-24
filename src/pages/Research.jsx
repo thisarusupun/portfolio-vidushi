@@ -3,7 +3,7 @@ import React from 'react'
 function Research() {
   return (
     <div>
-      <div className="bg-[url('src/images/researchs.png')] bg-[100vw] h-[605px]">
+      <div className="bg-[url('src/Assests/images/researchs.png')] bg-[100vw] h-[605px]">
       <p className='relative poppins-thin text-[#90F2FF] text-center text-[16px] pt-[120px]'>Researchers</p>
       <p className='relative poppins-extrathin text-[#90F2FF] text-center text-[50px] pt-[10px]'>
         <span className='font-bold'>A Summary of</span> My Researchers</p>
@@ -17,7 +17,7 @@ function Research() {
                   <p className='text-white text-[18px] poppins-thin font-medium'>Full keratin hair growth oil portion: increasing the hair thickness, stringiness and depth of the follicles with peppermint extract</p>
                 </div>
                 <div>
-                  <img src="src\images\qr.png" className="relative bg-black left-[22.411vw] w-[76px] h-[75px] top-[22px]"/>
+                  <img src="src\Assests\images\qr.png" className="relative bg-black left-[22.411vw] w-[76px] h-[75px] top-[22px]"/>
                   <p className='text-white relative  left-[22.211vw] top-[32px] poppins-thin font-bold text-[16px]'>Ref. No: 119</p>
                   </div>
                 
