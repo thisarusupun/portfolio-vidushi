@@ -1,8 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import '../styles/styles.css'
+import { sendMail } from '../api/Email';
 
 function Contacts() {
+   const [name, setName] = useState('');
+   const [email, setEmail] = useState('');
+   const [subject, setSubjecte] = useState('');
+   const [message, setMessage] = useState('');
+
+   const send = () =>
+    {
+      const data =
+      {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+      }
+      sendMail(data);
+    }
+
   return (
     <div className="min-h-screen flex flex-col bg-black h-[1175px]">
       <div className="flex-1">
@@ -13,15 +31,15 @@ function Contacts() {
           <div className='absolute w-[39.23vw] h-[697px] left-[50.58vw] bg-transparent pt-[80px]'>
             
             <div className='w-[39.23vw] h-[697px] bg-[#EDF2FF]'>
-             <form action="https://getform.io/f/rbeqgpvb" method="POST">
+             <form action="http://localhost:3000/msg" method="POST">
                 <p className='font-[poppins] font-medium pt-[30px] text-left pl-[2.196vw] text-[#00113D] opacity-1 h-[23px] pb-[20px]'>Name *</p> <br/>
              <div className='pl-[2.196vw]'>
                     <input
                      type="text"
                      id="name"
                      name="name"
-// value={formData.name}
-// onChange={handleChange}
+   value={name}
+   onChange={(e)=>setName(e.target.value)}
                      className="text-gray-700 border-black border h-[55px] w-[34.94vw] text-[24px]"
                      required/>
              </div><br/>
@@ -31,8 +49,8 @@ function Contacts() {
                     type="text"
                     id="email"
                     name="email"
-// value={formData.name}
-// onChange={handleChange}
+ value={email}
+ onChange={(e) => setEmail(e.target.value)}
                     className="text-gray-700 border-black border h-[55px] w-[34.94vw]  text-[24px] z-100"
                     required/>
              </div><br/>
@@ -42,8 +60,8 @@ function Contacts() {
                     type="text"
                     id="subject"
                     name="subject"
-// value={formData.name}
-// onChange={handleChange}
+ value={subject}
+ onChange={(e) => setSubjecte(e.target.value)}
                     className="text-gray-700 border-black border h-[55px] w-[34.94vw] text-[24px]"
                     required/>
              </div><br/>
@@ -53,14 +71,15 @@ function Contacts() {
                     type="text"
                     id="message"
                     name="message"
-// value={formData.name}
-// onChange={handleChange}
+ value={message}
+ onChange={(e) => setMessage(e.target.value)}
                     className="text-gray-700 border-black border h-[135px] w-[34.94vw] text-[24px]"
                     required/>
              </div><br/>
     <div className='flex items-center justify-center'>
   <button
      type="submit"
+     onClick={send}
      className='bg-[#00113D] h-[55px] w-[9.44vw] text-white poppins-thinb  opacity-1 '>Submit</button>
   </div>
   </form>
