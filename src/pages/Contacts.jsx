@@ -24,13 +24,13 @@ function Contacts() {
   return (
     <div className="min-h-screen flex flex-col bg-black h-[1175px]">
       <div className="flex-1">
-        <div className="bg-[url('src/Assests/images/contactus.png')] bg-[100vw] w-full h-[1175px] aspect-w-16 aspect-h-9">
+        <div className="bg-[url('src/Assests/images/contactus.png')] bg-[100vw] w-full h-[1175px] aspect-w-16 aspect-h-9 overflow-hidden">
 
-          <p className='font-[poppins] text-[#90F2FF] opacity-100 text-center pt-[120px]'>Contact Me</p>
+          <p className='font-[poppins] text-[#90F2FF] opacity-100 text-center pt-[60px] md:pt-[120px]'>Contact Me</p>
           <p className='text-center poppins-thin text-[50px] text-[#90F2FF] pt-[10px]'><span className='text-center font-[poppins] font-semibold text-[50px] text-[#90F2FF]'>Let’s</span> get in touch</p>
-          <div className='absolute w-[39.23vw] h-[697px] left-[50.58vw] bg-transparent pt-[80px]'>
-            
-            <div className='w-[39.23vw] h-[697px] bg-[#EDF2FF]'>
+          <div className='absolute w-[100vw] md:w-[39.23vw] md:h-[697px] left-[0vw] md:left-[50.58vw] bg-transparent pt-[80px]'>
+            <div className='flex items-center justify-center md:flex md:items-start md:justify-start'>
+            <div className='w-[80vw] md:w-[39.23vw] h-[540px] md:h-[697px] bg-[#EDF2FF]'>
              <form>
                 <p className='font-[poppins] font-medium pt-[30px] text-left pl-[2.196vw] text-[#00113D] opacity-1 h-[23px] pb-[20px]'>Name *</p> <br/>
              <div className='pl-[2.196vw]'>
@@ -40,7 +40,7 @@ function Contacts() {
                      name="name"
    value={name}
    onChange={(e)=>setName(e.target.value)}
-                     className="text-gray-700 border-black border h-[55px] w-[34.94vw] text-[24px]"
+                     className="text-gray-700 border-black border h-[35px] md:h-[55px] w-[75vw] md:w-[34.94vw] text-[20px] md:text-[24px]"
                      required/>
              </div><br/>
                   <p className=' font-[poppins] font-medium text-left pl-[2.196vw] text-[#00113D] opacity-1 h-[23px] pb-[20px]'>Email *</p><br/>
@@ -51,7 +51,7 @@ function Contacts() {
                     name="email"
  value={email}
  onChange={(e) => setEmail(e.target.value)}
-                    className="text-gray-700 border-black border h-[55px] w-[34.94vw]  text-[24px] z-100"
+                    className="text-gray-700 border-black border h-[35px] md:h-[55px] w-[75vw] md:w-[34.94vw]  text-[20px] md:text-[24px] z-100"
                     required/>
              </div><br/>
                   <p className=' font-[poppins] font-medium text-left pl-[2.196vw] text-[#00113D] opacity-1 h-[23px] pb-[20px]'>Subject *</p><br/>
@@ -62,7 +62,7 @@ function Contacts() {
                     name="subject"
  value={subject}
  onChange={(e) => setSubjecte(e.target.value)}
-                    className="text-gray-700 border-black border h-[55px] w-[34.94vw] text-[24px]"
+                    className="text-gray-700 border-black border h-[35px] md:h-[55px] w-[75vw] md:w-[34.94vw] text-[20px] md:text-[24px]"
                     required/>
              </div><br/>
                   <p className=' font-[poppins] font-medium text-left pl-[2.196vw] text-[#00113D] opacity-1 h-[23px] pb-[20px] font-poppins'>Message *</p><br/>
@@ -73,23 +73,24 @@ function Contacts() {
                     name="message"
  value={message}
  onChange={(e) => setMessage(e.target.value)}
-                    className="text-gray-700 border-black border h-[135px] w-[34.94vw] text-[24px]"
+                    className="text-gray-700 border-black border h-[75px] md:h-[135px] w-[75vw] md:w-[34.94vw] text-[20px] md:text-[24px]"
                     required/>
              </div><br/>
     <div className='flex items-center justify-center'>
   <button
      type="submit"
      onClick={send}
-     className='bg-[#00113D] h-[55px] w-[9.44vw] text-white poppins-thinb  opacity-1 '>Submit</button>
+     className='bg-[#00113D] h-[35px] md:h-[55px] w-[17vw] md:w-[9.44vw] text-white poppins-thinb  opacity-1 '>Submit</button>
   </div>
   </form>
+          </div>
           </div>
               </div>
 
 
 
 
-<div className='relative top-[272.09px] left-[10.175vw] w-[38vw]'>
+<div className='relative top-[650px] md:top-[272.09px] left-[10.175vw] w-[80vw] md:w-[38vw]'>
 
 <div className='flex flex-row space-x-[0.75vw]'>
 <svg xmlns="http://www.w3.org/2000/svg" width="28.375" height="19.154" viewBox="0 0 28.375 19.154">
@@ -117,10 +118,10 @@ function Contacts() {
 </div>
 </div>
 
-<div className='relative top-[390px] left-[10.175vw] w-[7.45vw] h-[59.83px] bg-transparent'>
+<div className='relative top-[680px] md:top-[390px] left-[10.175vw] md:w-[7.45vw] h-[59.83px] bg-transparent'>
                <p className='text-white  poppins-thin text-[16px] h-[23px]' >Follow me</p>
                <div className='pt-[19px]'>
-               <div className='flex flex-row justify-center items-left space-x-[1.7vw]'>
+               <div className='flex flex-row md:justify-center items-left space-x-[6vw] md:space-x-[1.7vw]'>
                <a href="https://web.facebook.com/profile.php?id=100082492470492&mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank">
                <svg xmlns="http://www.w3.org/2000/svg" width="17.942" height="17.834" viewBox="0 0 17.942 17.834">
   <path id="Icon_awesome-facebook" data-name="Icon awesome-facebook" d="M18.5,9.534A8.971,8.971,0,1,0,8.132,18.4V12.127H5.853V9.534H8.132V7.557a3.165,3.165,0,0,1,3.388-3.49,13.806,13.806,0,0,1,2.008.175V6.449H12.4a1.3,1.3,0,0,0-1.462,1.4V9.534h2.488l-.4,2.593h-2.09V18.4A8.974,8.974,0,0,0,18.5,9.534Z" transform="translate(-0.563 -0.563)" fill="#fff"/>

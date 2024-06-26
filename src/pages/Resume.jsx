@@ -17,7 +17,7 @@ function Resume() {
  
   return (
     <div>
-      <div className="bg-[url('src/Assests/images/resume.png')] bg-[100vw] h-[1579px] overflow-hidden">
+      <div className="bg-[url('src/Assests/images/resume.png')] bg-[100vw] h-[7000px] md:h-[1579px] overflow-hidden">
       <button onClick={onButtonClick}className='relative bg-[#000E31] w-[18.0087vw] h-[74px] z-50 top-[1385px] left-[41.654vw]'>
         <p className='text-white font-[16px] poppins-thin'><span className='font-bold'>Download My</span> Resume</p>
         </button> 
