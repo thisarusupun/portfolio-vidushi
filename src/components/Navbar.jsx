@@ -46,7 +46,7 @@ const Navbar = () => {
           <TiSocialFacebookCircular />
         </>
       ),
-      href:"https://facebook.com"
+      href:"https://www.facebook.com/profile.php?id=100082492470492&mibextid=ZbWKwL"
       
     },
     {
@@ -56,7 +56,7 @@ const Navbar = () => {
           <FaInstagram />
         </>
       ),
-      href:"https://instagram.com"
+      href:"https://www.instagram.com/invites/contact/?i=fuw748pwvrrn&utm_content=u6x36mv"
     },
     {
       id: 3,
@@ -65,7 +65,7 @@ const Navbar = () => {
           <FaLinkedin />
         </>
       ),
-      href:"https://linkedin.com",
+      href:"https://www.linkedin.com/in/udeshi-bandara-29a394203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     }
   ]
 
@@ -73,9 +73,9 @@ const Navbar = () => {
     <>
       <div className='flex justify-between items-center w-full h-20 px-4 text-[#ffffff] bg-[#001139] fixed'>
         <div>
-          {/* Display the Logo */}
+          {/* Display the Logo in Navbar*/}
           <Link to="home" smooth duration={500}>
-          <h1 className='text-3xl pl-40 ml-14 font-bold text-[#A7F0FD] cursor-pointer capitalize'>Udeshi</h1>
+          <h1 className='text-3xl pl-32 font-bold text-[#A7F0FD] cursor-pointer capitalize'>Udeshi</h1>
           </Link>
         </div>
 
