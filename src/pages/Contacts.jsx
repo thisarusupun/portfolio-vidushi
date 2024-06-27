@@ -8,7 +8,7 @@ function Contacts() {
    const [email, setEmail] = useState('');
    const [subject, setSubjecte] = useState('');
    const [message, setMessage] = useState('');
-  
+   const [loading, setLoading] = useState(false);
  
    const send = async() =>
     {
@@ -19,11 +19,14 @@ function Contacts() {
         subject: subject,
         message: message
       }
+      setLoading(true); 
       const response = await sendMail(data);
+      setLoading(false); 
 
-      console.log(response);
+      
       if(response.status === 200)
         {
+          alert("SUBMISSION SUCCESSFUL!")
           setName('');
           setEmail('');
           setSubjecte('');
@@ -87,10 +90,13 @@ function Contacts() {
                     required/>
              </div><br/>
     <div className='flex items-center justify-center'>
-  <button
+ { !loading && (<button
+     disabled={loading}
      type="submit"
      onClick={send}
-     className='hover:scale-105 duration-200 rounded-sm bg-[#00113D] h-[35px] md:h-[55px] w-[17vw] md:w-[9.44vw] text-white poppins-thinb  opacity-1 '>Submit</button>
+     className='hover:scale-105 duration-200 rounded-sm bg-[#00113D] h-[35px] md:h-[55px] w-[17vw] md:w-[9.44vw] text-white poppins-thinb  opacity-1 '>Submit</button>)
+ }
+     {loading && <div className="spinner"></div>}
   </div>
   {/* </form> */}
           </div>
