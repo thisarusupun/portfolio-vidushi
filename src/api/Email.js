@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+
 
 const sendMail = async (data)=>
 {
-    const navigate = useNavigate();
+   
     try{
     const response =  await axios.post('http://localhost:3000/msg',data)
 
@@ -12,7 +12,6 @@ const sendMail = async (data)=>
     if(response.status === 200)
         {
            alert("SUBMISSION SUCCESSFUL!")
-           navigate('/success');
         }
     else
     {
