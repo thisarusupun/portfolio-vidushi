@@ -4,7 +4,7 @@ import '../styles/styles.css';
 function Blogs() {
   return (
     <div>
-      <div className="bg-[url('src/Assests/images/blog.png')] h-[782px]">
+      <div className="bg-[url('src/Assests/images/blog.png')] h-[1425px] md:h-[782px]">
         <p className='text-[#90F2FF] text-center pt-[120px] text-[16px] font-[poppins] font-normal'>Blogs</p>
         <div className="h-[71px] pt-[10px]">
           <p className='text-[#90F2FF] text-[50px] poppins-extrathin text-center'>
