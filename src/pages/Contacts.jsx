@@ -24,7 +24,10 @@ function Contacts() {
       console.log(response);
       if(response.status === 200)
         {
-          alert('Message sent successfully');
+          setName('');
+          setEmail('');
+          setSubjecte('');
+          setMessage('');
         }
     }
 
@@ -38,7 +41,7 @@ function Contacts() {
           <div className='absolute w-[100vw] md:w-[39.23vw] md:h-[697px] left-[0vw] md:left-[50.58vw] bg-transparent pt-[80px]'>
             <div className='flex items-center justify-center md:flex md:items-start md:justify-start'>
             <div className='w-[80vw] rounded-sm md:w-[39.23vw] h-[540px] md:h-[697px] bg-[#EDF2FF]'>
-             <form>
+             {/* <form> */}
                 <p className='font-[poppins] font-medium pt-[30px] text-left pl-[2.196vw] text-[#00113D] opacity-1 h-[23px] pb-[20px]'>Name *</p> <br/>
              <div className='pl-[2.196vw]'>
                     <input
@@ -89,7 +92,7 @@ function Contacts() {
      onClick={send}
      className='hover:scale-105 duration-200 rounded-sm bg-[#00113D] h-[35px] md:h-[55px] w-[17vw] md:w-[9.44vw] text-white poppins-thinb  opacity-1 '>Submit</button>
   </div>
-  </form>
+  {/* </form> */}
           </div>
           </div>
               </div>

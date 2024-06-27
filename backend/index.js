@@ -38,7 +38,14 @@ app.post("/msg",async(req,res)=>{
     to:`shashigakavinda@gmail.com`,// change with your receiver email (ebbandara199@gmail.com)
     subject: `${data.subject}`,
     text: `contact us ${data.email} .`,
-    html: `<h1>from :${data.name}</h1><br/><h2>contact :${data.email}</h2><br/><P>Message:${data.message}</p>`,
+    html: ` <div style="font-family: 'Poppins', sans-serif; background-color: #f9f9f9; padding: 20px;">
+      <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 0 auto;">
+        <h1 style="font-size: 24px; font-weight: 700; color: #333333;">From: ${data.name}</h1>
+        <h2 style="font-size: 20px; font-weight: 600; color: #555555;">Contact: ${data.email}</h2>
+        <p style="font-size: 16px; font-weight: 300; line-height: 1.5; color: #777777;">Message:</p>
+        <p style="font-size: 16px; font-weight: 300; line-height: 1.5; color: #777777;">${data.message}</p>
+      </div>
+    </div>`,
   };
 
   // send the mail using the transporter object 

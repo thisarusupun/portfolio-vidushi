@@ -12,6 +12,7 @@ const sendMail = async (data)=>
     if(response.status === 200)
         {
            alert("SUBMISSION SUCCESSFUL!")
+           return(response)
         }
     else
     {
