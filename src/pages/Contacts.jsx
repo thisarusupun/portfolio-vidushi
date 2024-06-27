@@ -8,8 +8,9 @@ function Contacts() {
    const [email, setEmail] = useState('');
    const [subject, setSubjecte] = useState('');
    const [message, setMessage] = useState('');
-
-   const send = () =>
+  
+ 
+   const send = async() =>
     {
       const data =
       {
@@ -18,7 +19,13 @@ function Contacts() {
         subject: subject,
         message: message
       }
-      sendMail(data);
+      const response = await sendMail(data);
+
+      console.log(response);
+      if(response.status === 200)
+        {
+          alert('Message sent successfully');
+        }
     }
 
   return (

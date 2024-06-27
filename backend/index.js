@@ -49,6 +49,7 @@ app.post("/msg",async(req,res)=>{
     } else {
       console.log("Email sent: " + info.response);
       res.status(200).send("message sent successfully");
+      alert("Message Sent successfully");
     }
   });
 }
