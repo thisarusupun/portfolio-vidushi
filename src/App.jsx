@@ -6,10 +6,10 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return <div>
-
-  <Blogs/>
-  <Research/>
-  <Contacts/>
+<Resume/>
+<Blogs/>
+<Research/>
+<Contacts/>
   
     
     </div>;

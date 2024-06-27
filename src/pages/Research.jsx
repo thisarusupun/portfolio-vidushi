@@ -3,7 +3,7 @@ import React from 'react'
 function Research() {
   return (
     <div>
-      <div className="bg-[url('src/Assests/images/researchs.png')] bg-[100vw] h-[950px] md:h-[605px] overflow-hidden">
+      <div className="bg-[url('src/Assests/images/researchs.png')] bg-[100vw] h-[800px] md:h-[605px] overflow-hidden">
       <p className='relative text-[#90F2FF] text-center text-[16px] pt-[60px] md:pt-[120px] poppins-thin'>Researchers</p>
       <p className='relative poppins-extrathin text-[#90F2FF] text-center text-[50px] pt-[10px]'>
         <span className='font-bold'>A Summary of</span> My Researchers</p>
