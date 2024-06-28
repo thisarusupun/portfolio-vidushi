@@ -1,7 +1,11 @@
-import Achievements from './pages/Achievements';
-import About from './pages/About';
+import Achievements from "./pages/Achievements";
+import About from "./pages/About";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import Blogs from "./pages/Blogs";
+import Contacts from "./pages/Contacts";
+import Research from "./pages/Research";
+import Resume from "./pages/Resume";
 
 const App = () => {
   return (
@@ -10,9 +14,12 @@ const App = () => {
       <Home />
       <About />
       <Achievements />
+      <Resume />
+      <Blogs />
+      <Research />
+      <Contacts />
     </div>
   );
-  
 };
 
 export default App;
