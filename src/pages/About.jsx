@@ -76,7 +76,7 @@ const About = () => {
           <div className="w-full  rounded-md bg-black p-4 mr-4 text-left ">
             <p className="font-bold text-md text-white">Date of Birth</p>
             <p className="font-normal text-sm text-stone-200">
-              15<span className="subscript">th</span> March, 1995
+              15th March, 1995
             </p>
           </div>
           {/* From Card */}
